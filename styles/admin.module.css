@@ -1,0 +1,118 @@
+.admin {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #007BFF;
+    color: white;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.navLinks a:hover {
+    color: #FFDD00;
+}
+
+.navLinks {
+    display: flex;
+    list-style-type: none;
+    /* Add your existing styles */
+}
+
+.navLinks li {
+    margin-right: 1rem;
+    /* Add your existing styles */
+}
+
+.navLinks a,
+.navLinks button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    /* Add any additional styles for links and buttons */
+}
+
+.navLinks button:hover {
+    color: #FFDD00;
+}
+
+.logoutButton {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    outline: inherit;
+    /* Add any additional styles for the logout button */
+}
+
+.content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+.table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
