@@ -46,6 +46,7 @@ const Index = () => {
                         <li><Link href="/adminlogin" className="block py-2 px-4 text-gray-600 hover:text-blue-600">Admin Portal</Link></li>
                         <li><Link href="/services" className="block py-2 px-4 text-gray-600 hover:text-blue-600">Services</Link></li>
                         <li><Link href="/contact" className="block py-2 px-4 text-gray-600 hover:text-blue-600">Contact</Link></li>
+                        <li><Link href="/patientportal" className="block py-2 px-4 text-gray-600 hover:text-blue-600">Patient Portal</Link></li>
                     </ul>
                 </div>
             </nav>

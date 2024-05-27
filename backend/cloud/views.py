@@ -16,10 +16,12 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import (
     Queries,
     AdminUser,
+    Patient,
 )
 from .serializers import (
     QueriesSerializer,
     AdminUserSerializer,
+    PatientSerializer,
 )
 # Create your views here.
 
@@ -71,3 +73,28 @@ class AdminUserListAPIView(APIView):
         users = AdminUser.objects.all()
         serializer = AdminUserSerializer(users, many=True)
         return Response(serializer.data)
+
+
+class PatientListAPIView(generics.ListCreateAPIView):
+    serializer_class = PatientSerializer
+
+    def get_queryset(self):
+        return Patient.objects.all()
+
+
+@csrf_exempt
+def patient_details(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        patientId = data.get('patientId')
+        password = data.get('password')
+
+        try:
+            patient = Patient.objects.get(
+                patientId=patientId)
+            serializer = PatientSerializer(patient)
+            return JsonResponse(serializer.data, safe=False)
+        except Patient.DoesNotExist:
+            return JsonResponse({'error': 'Patient not found'}, status=404)
+
+    return JsonResponse({'error': 'Invalid request method'}, status=405)
