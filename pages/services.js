@@ -34,7 +34,7 @@ const Services = () => {
                     <div className="p-6">
                         <h2 className="text-xl font-semibold text-gray-800 mb-4">Pediatrics</h2>
                         <p className="text-gray-700">Our pediatrics department offers compassionate care for children of all ages.</p>
-                        <Link href="/services/pediatrics" className="text-blue-600 hover:underline mt-2 inline-block">
+                        <Link href="/pediatrics" className="text-blue-600 hover:underline mt-2 inline-block">
                             Learn more
                         </Link>
                     </div>
