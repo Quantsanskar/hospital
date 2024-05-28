@@ -12,7 +12,7 @@ const Services = () => {
                     <div className="p-6">
                         <h2 className="text-xl font-semibold text-gray-800 mb-4">Cardiology</h2>
                         <p className="text-gray-700">Our cardiology department offers comprehensive care for heart-related conditions.</p>
-                        <Link href="/services/cardiology" className="text-blue-600 hover:underline mt-2 inline-block">
+                        <Link href="/cardiology" className="text-blue-600 hover:underline mt-2 inline-block">
                             Learn more
                         </Link>
                     </div>
@@ -23,7 +23,7 @@ const Services = () => {
                     <div className="p-6">
                         <h2 className="text-xl font-semibold text-gray-800 mb-4">Neurology</h2>
                         <p className="text-gray-700">Our neurology department provides expert care for neurological disorders and conditions.</p>
-                        <Link href="/services/neurology" className="text-blue-600 hover:underline mt-2 inline-block">
+                        <Link href="/neurology" className="text-blue-600 hover:underline mt-2 inline-block">
                             Learn more
                         </Link>
                     </div>

@@ -14,6 +14,10 @@ const Admin = () => {
     const [address, setAddress] = useState('');
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
+    const [disease, setDisease] = useState('');
+    const [doctor_assigned, setDoctor_assigned] = useState('');
+    const [treatment_start_date, setTreatment_start_date] = useState('');
+    const [treatment_end_date, setTreatment_end_date] = useState('');
     const router = useRouter();
 
     useEffect(() => {
@@ -84,6 +88,10 @@ const Admin = () => {
             phone,
             address,
             password,
+            disease,
+            doctor_assigned,
+            treatment_start_date,
+            treatment_end_date
         };
 
         try {
@@ -105,11 +113,15 @@ const Admin = () => {
                 setPhone('');
                 setAddress('');
                 setPassword('');
-                
+                setDisease('');
+                setDoctor_assigned('');
+                setTreatment_start_date('');
+                setTreatment_end_date('');
+
             } else {
                 setError('Registration failed. Please try again.');
             }
-            
+
         } catch (error) {
             console.error('Error registering:', error);
             setError('An error occurred while registering. Please try again.');
@@ -298,6 +310,50 @@ const Admin = () => {
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="disease" className="block text-gray-700">Disease</label>
+                    <input
+                        type="text"
+                        id="disease"
+                        value={disease}
+                        onChange={(e) => setDisease(e.target.value)}
+                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="doctorAssigned" className="block text-gray-700">Doctor Assigned</label>
+                    <input
+                        type="text"
+                        id="doctorAssigned"
+                        value={doctor_assigned}
+                        onChange={(e) => setDoctor_assigned(e.target.value)}
+                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="treatmentStartDate" className="block text-gray-700">Treatment Start Date</label>
+                    <input
+                        type="date"
+                        id="treatmentStartDate"
+                        value={treatment_start_date}
+                        onChange={(e) => setTreatment_start_date(e.target.value)}
+                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+                        required
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="treatmentEndDate" className="block text-gray-700">Treatment End Date</label>
+                    <input
+                        type="date"
+                        id="treatmentEndDate"
+                        value={treatment_end_date}
+                        onChange={(e) => setTreatment_end_date(e.target.value)}
                         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
                         required
                     />
