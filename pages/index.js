@@ -10,11 +10,24 @@ const Index = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const doctors = [
-        { name: 'Dr. Shaurya Bhardwaj', specialty: 'Neurology', experience: '1 years', image: '/DrShaurya.jpg' },
-        { name: 'Dr. John Doe', specialty: 'Cardiology', experience: '10 years', image: '/hospital1.png' },
-        { name: 'Dr. Jane Smith', specialty: 'Neurology', experience: '8 years', image: '/doctor1.png' },
-        { name: 'Dr. Emily Johnson', specialty: 'Pediatrics', experience: '12 years', image: '/doctor3.png' },
-        { name: 'Dr. Michael Brown', specialty: 'Orthopedics', experience: '7 years', image: '/doctor4.png' },
+        { name: 'Dr. Ajay K Gopal', specialty: 'Interventional Cardiology', experience: '20 years', image: '/DrAjayKGopal.png' },
+        { name: "Dr. Maitri Chaudhary",specialty: "Pediatric Cardiology", experience: '10 years', image: '/DrMaitriChaudhary.png' },
+        { name: "Dr. Vanita Arora",specialty: "Cardiac Electrophysiology", experience: '8 years', image: '/DrVanitaArora.png' },
+        { name: "Dr. Rajiv Anand",specialty: "Neurophysiology", experience: '25 years', image: '/DrRajivAnand.png' },
+        { name: "Dr. Aruna Choudhary",specialty: "Pediatric Neurology", experience: '7 years', image: '/DrArunaChoudhary.png' },
+        { name: "Dr. Shaurya Bhardwaj",specialty: "Epileptology", experience: '5 years', image: '/DrShaurya.jpg' },
+        { name: "Dr. Sneha Kapoor",specialty: "Neuroimmunology", experience: '12 years', image: '/DrSnehaKapoor.png' },
+        {  name: "Dr. Priya Sharma",specialty: "Neurosurgery", experience: '20 years', image: '/DrPriyaSharma.png' },
+        {  name: "Dr. Naina Reddy",specialty: "Neuro-Oncology", experience: '15 years', image: '/DrNainaReddy.png' },
+        {  name: "Dr. Priya Sharma",specialty: "General Pediatrics", experience: '13 years', image: '/DrPriyaSharma.png' },
+        {  name: "Dr. Neha Singh",specialty: "Pediatric Immunology", experience: '10 years', image: '/DrNehaSingh.png' },
+        {  name: "Dr. Aarushi Gupta",specialty: "Pediatric Oncology", experience: '10 years', image: '/DrAarushiGupta.png' },
+        {  name: "Dr. Kavya Reddy",specialty: "Pediatric Surgery", experience: '18 years', image: '/DrKavyaReddy.png' },
+        {  name: "Dr. Ravi Kumar",specialty: "Neonatology", experience: '12 years', image: '/DrRaviKumar.png' },
+        {  name: "Dr. Ananya Verma",specialty: "Pediatric Neurology", experience: '14 years', image: '/DrAnanyaVerma.png' },
+        {  name: "Dr. Mohit Gupta",specialty: "Pediatric Cardiology", experience: '14 years', image: '/DrMohitGupta.png' },
+        {  name: "Dr. Meera Patel",specialty: "Pediatric Gastroenterology", experience: '9 years', image: '/DrMeeraPatel.png' },
+        {  name: "Dr. Siddharth Jain",specialty: "Pediatric Pulmonology", experience: '10 years', image: '/DrSiddharthJain.png' },
     ];
 
     const settings = {
