@@ -74,7 +74,7 @@ const Pediatrics = () => {
 
             <div className="row mb-12">
                 <div className="col-md-6 mb-4">
-                    <img src="/baby.png" alt="Pediatrics" className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" />
+                    <img src="/child.png" alt="Pediatrics" className="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" />
                 </div>
                 <div className="col-md-6 flex flex-col justify-center">
                     <h2 className="text-4xl font-semibold text-gray-800 mb-4">Why Choose Us?</h2>
